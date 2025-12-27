@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {
   FiBarChart,
-  FiEdit,
+  FiBox,
   FiHome,
   FiSettings,
   FiUsers,
@@ -17,8 +17,8 @@ const Users = () => {
             className="bg-transparent p-2 rounded-lg cursor-pointer"
           />
         </Link>
-        <Link href="/edit">
-          <FiEdit
+        <Link href="/inventory">
+          <FiBox
             size={35}
             className="bg-transparent p-2 rounded-lg cursor-pointer"
           />

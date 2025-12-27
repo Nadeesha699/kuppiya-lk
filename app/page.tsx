@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import {
   FiBarChart,
+  FiBox,
   FiClock,
-  FiEdit,
   FiHome,
   FiMoon,
   FiSearch,
@@ -41,8 +41,8 @@ export default function Home() {
             className="bg-green-400 p-2 rounded-lg text-white cursor-pointer"
           />
         </Link>
-        <Link href="/edit">
-          <FiEdit
+        <Link href="/inventory">
+          <FiBox
             size={35}
             className="bg-transparent p-2 rounded-lg cursor-pointer"
           />
@@ -64,7 +64,7 @@ export default function Home() {
           className="bg-transparent p-2 rounded-lg cursor-pointer"
         />
       </div>
-      <div className="bg-white w-full flex flex-col p-5 gap-5">
+      <div className="bg-white w-full flex flex-col pt-5 pl-5 pr-5 gap-5">
         <div className="flex flex-row justify-end items-end gap-5">
           <div className="flex flex-row gap-1">
             <FiClock size={20} />
