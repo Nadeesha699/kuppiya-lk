@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { articles } from "@/app/lib/post";
+import { motion } from "framer-motion";
+import { fadeUp } from "../lib/motion";
 
 export const ArticlesSection = () => {
   const categories = ["All", "Film", "Tech", "Facts"];
@@ -25,11 +27,23 @@ export const ArticlesSection = () => {
   const currentArticles = filtered.slice((page - 1) * perPage, page * perPage);
 
   return (
-    <section className="bg-black text-white py-20 px-6">
-      <h1 className="text-4xl font-bold mb-6 w-full text-center">
+    <section id="articles" className="bg-black text-white py-20 px-6">
+      <motion.h1
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="text-2xl lg:text-4xl font-bold mb-6 w-full text-center"
+      >
         Article<span className="text-blue-500">s</span>
-      </h1>
-      <div className="flex justify-center gap-4 mb-10 flex-wrap">
+      </motion.h1>
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="flex justify-center gap-4 mb-10 flex-wrap"
+      >
         {categories.map((cat) => (
           <button
             key={cat}
@@ -46,8 +60,14 @@ export const ArticlesSection = () => {
             {cat}
           </button>
         ))}
-      </div>
-      <div className="grid md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+      </motion.div>
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="grid md:grid-cols-5 gap-4 max-w-6xl mx-auto"
+      >
         {currentArticles.map((a) => {
           const isLong = a.content.split(" ").length > 10;
 
@@ -74,7 +94,7 @@ export const ArticlesSection = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
       <div className="flex justify-center items-center gap-4 mt-10">
         <button
           onClick={() => setPage((p) => Math.max(p - 1, 1))}

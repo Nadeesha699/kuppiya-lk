@@ -19,7 +19,7 @@ export default async function PostPage({ params }: Props) {
     <div className="min-h-screen bg-black text-white">
       <div className="max-w-3xl mx-auto px-6 py-12">
 
-        <Link href="/" className="text-blue-500 text-sm">
+        <Link href="/" className="text-blue-500 text-sm mr-2">
           ← Back to Home
         </Link>
 
