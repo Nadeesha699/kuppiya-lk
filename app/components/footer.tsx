@@ -95,10 +95,30 @@ export const FooterSection = () => {
             viewport={{ once: true }}
             className="flex flex-row gap-5 cursor-pointer"
           >
-            <FaFacebookF className="text-blue-500 hover:text-white" />{" "}
-            <FaWhatsapp className="text-green-400 hover:text-white" />
-            <FaLinkedinIn className="text-blue-400 hover:text-white" />
-            <MdEmail className="text-red-500 hover:text-white" />
+            <a
+              href="https://www.facebook.com/profile.php?id=100039332113797"
+              target="_blank"
+            >
+              <FaFacebookF className="text-blue-500 hover:text-white" />
+            </a>
+
+            <a
+              href="https://wa.me/+94711764232"
+              target="_blank"
+            >
+              <FaWhatsapp className="text-green-400 hover:text-white" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+            >
+              <FaLinkedinIn className="text-blue-400 hover:text-white" />
+            </a>
+
+            <a href="mailto:nadeesharuwandima@gmail.com">
+              <MdEmail className="text-red-500 hover:text-white" />
+            </a>
           </motion.div>
         </div>
       </div>
@@ -112,11 +132,10 @@ export const FooterSection = () => {
       >
         <p>© 2026 Kuppiya — Stay Curious • Stay Updated</p>
 
-        <p className="mt-1">
-          Developed by
-          <a className="text-blue-500 hover:text-blue-700 font-semibold cursor-pointer">
-            {" "}
-            Nadeesha Ruwandima
+        <p className="mt-1 ">
+          Developed by 
+          <a href="https://nadeesha699.github.io/nadeesha-ruwandima/"  target="_blank" className="ml-2 text-blue-500 hover:text-blue-700 font-semibold cursor-pointer">
+             Nadeesha Ruwandima
           </a>
         </p>
       </motion.div>

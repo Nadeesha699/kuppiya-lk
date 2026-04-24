@@ -19,7 +19,7 @@ export const HomeSection = () => {
 
       <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
       <div className="absolute top-0 w-full flex justify-between items-center p-2 lg:p-4 z-10">
-        <img src="/logo.png" className="w-12 h-12 rounded-full" />
+        <img src="/icon.png" className="w-12 h-12 rounded-full" />
 
         <div className="sm:flex gap-8 text-sm hidden">
           <a
